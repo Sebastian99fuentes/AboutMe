@@ -1,0 +1,238 @@
+main {
+ background: linear-gradient(180deg, #042b52 0%, #ffffff 180%);
+}
+p, h1 {
+ 
+  color: #ffffff;
+ 
+}
+h2 {
+  color: #ffffff;
+}
+
+.a {
+  text-decoration: none;
+  color: white;
+}
+
+
+// Botón moderno y atractivo
+.buton_disponible {
+  background: linear-gradient(90deg, #323ee7 0%, #faede9 100%);
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.8rem 2.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(255, 152, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+  margin-top: 1rem;
+  letter-spacing: 1px;
+}
+.buton_disponible:hover {
+  background: linear-gradient(90deg, #faede9 0%, #323ee7 100%);
+  transform: scale(1.07) translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 87, 34, 0.18);
+}
+
+
+.about, .Proyecto {
+  padding: 3rem 0;
+  
+  
+
+}
+
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.about__intro, .about__skills, .about__profile {
+ background-color: transparent;
+  border-radius: 1rem;
+ 
+  padding: 2rem;
+  flex: 1 1 300px;
+  min-width: 280px;
+  h1,p {
+    color: #fff;
+  }
+   li {
+    color: #181717;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    background-color: transparent;
+  }
+}
+
+.about__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about__profile-overlay {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.about__profile-overlay h3 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #007bff;
+  color: #fff;
+  padding: 0.3rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.about__profile img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #007bff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+.buton_disponible{
+  border-radius: 05rem;
+  background-color: #181717;
+}
+
+.about__skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.about__skills li {
+  background-color: transparent;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  
+  margin-right: 0.5rem;
+}
+.about__skills img {
+  width: 100px;
+  height: 100;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+} 
+
+///Proyectos  echos 
+
+.programas__intro{
+    background: transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+.programas__list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.programa{
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2rem;
+  transition: transform 0.3s cubic-bezier(.25,.8,.25,1), box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+  
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+.programa__img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  padding: 15px;
+  border-radius: 2rem;
+
+}
+
+
+// about me seccitonn
+
+.about__me {
+   background-color: transparent;
+  border-radius: 1rem;
+ 
+  padding: 2rem;
+  flex: 1 1 300px;
+  min-width: 280px;
+  h1,p {
+    color: #fff;
+    font-size: 1.3rem;
+  }
+   li {
+    color: #181717;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    background-color: transparent;
+  } 
+}
+
+.about__me-image{
+    width: 50%;
+    height: 50%;
+    margin: 30px;
+    img {
+    transform: rotate(10deg);
+    width: 80%;
+    height: auto;
+    border: 4px solid #007bff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  }
+}
+
+
+
+
+.footer__icons{
+   width: 80%;
+  height: auto;
+  border-radius: 1rem;
+  padding-left: 150px;
+  padding-bottom: 25px;
+  text-align: center;
+
+  img {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: transform 0.3s ease;
+  }
+  .LinkedIn {
+    width: 90px;
+  }
+  :hover img {
+    transform: scale(1.1) translateY(-2px);
+
+  }
+} 
+
